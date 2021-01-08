@@ -32,6 +32,11 @@ kubectl apply -f srcs/service-metallb/serviceaccount.yaml
 echo -e "CREATE NGINX IMAGE AND DEPLOYMENT"
 docker build -t container-nginx srcs/nginx/
 kubectl apply -f srcs/nginx/nginx.yaml
+# A reverse proxy server is a type of proxy server that 
+# typically sits behind the firewall in a private network and 
+# directs client requests to the appropriate backend server.
+
+# 307 redirect: indicating that the requested resource has been temporarily moved
 
 # FTPS #
 echo -e "CREATE FTPS IMAGE AND DEPLOYMENT"
